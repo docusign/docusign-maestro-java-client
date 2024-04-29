@@ -16,7 +16,9 @@ public enum WorkflowStepHistoryState {
   
   COMPLETED("Completed"),
   
-  FAILED("Failed");
+  FAILED("Failed"),
+  
+  CANCELED("Canceled");
 
   private String value;
 

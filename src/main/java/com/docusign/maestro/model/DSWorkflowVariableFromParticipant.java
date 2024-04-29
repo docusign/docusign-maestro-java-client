@@ -2,110 +2,15 @@ package com.docusign.maestro.model;
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.docusign.maestro.model.DSWorkflowVariableSourceTypesParticipant;
-import com.docusign.maestro.model.ParticipantKeys;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 /**
- * DS Workflow Variable from a Participant.
+ * DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition..
  *
  */
-@Schema(description = "DS Workflow Variable from a Participant")
+@Schema(description = "DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition.")
 
 public class DSWorkflowVariableFromParticipant {
-  @JsonProperty("key")
-  private ParticipantKeys key = null;
-
-  @JsonProperty("participantId")
-  private String participantId = null;
-
-  @JsonProperty("source")
-  private DSWorkflowVariableSourceTypesParticipant source = null;
-
-
-  /**
-   * key.
-   *
-   * @return DSWorkflowVariableFromParticipant
-   **/
-  public DSWorkflowVariableFromParticipant key(ParticipantKeys key) {
-    this.key = key;
-    return this;
-  }
-
-  /**
-   * Get key.
-   * @return key
-   **/
-  @Schema(required = true, description = "")
-  public ParticipantKeys getKey() {
-    return key;
-  }
-
-  /**
-   * setKey.
-   **/
-  public void setKey(ParticipantKeys key) {
-    this.key = key;
-  }
-
-
-  /**
-   * participantId.
-   *
-   * @return DSWorkflowVariableFromParticipant
-   **/
-  public DSWorkflowVariableFromParticipant participantId(String participantId) {
-    this.participantId = participantId;
-    return this;
-  }
-
-  /**
-   * Get participantId.
-   * @return participantId
-   **/
-  @Schema(required = true, description = "")
-  public String getParticipantId() {
-    return participantId;
-  }
-
-  /**
-   * setParticipantId.
-   **/
-  public void setParticipantId(String participantId) {
-    this.participantId = participantId;
-  }
-
-
-  /**
-   * source.
-   *
-   * @return DSWorkflowVariableFromParticipant
-   **/
-  public DSWorkflowVariableFromParticipant source(DSWorkflowVariableSourceTypesParticipant source) {
-    this.source = source;
-    return this;
-  }
-
-  /**
-   * Get source.
-   * @return source
-   **/
-  @Schema(required = true, description = "")
-  public DSWorkflowVariableSourceTypesParticipant getSource() {
-    return source;
-  }
-
-  /**
-   * setSource.
-   **/
-  public void setSource(DSWorkflowVariableSourceTypesParticipant source) {
-    this.source = source;
-  }
-
 
   /**
    * Compares objects.
@@ -120,10 +25,7 @@ public class DSWorkflowVariableFromParticipant {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    DSWorkflowVariableFromParticipant dsWorkflowVariableFromParticipant = (DSWorkflowVariableFromParticipant) o;
-    return Objects.equals(this.key, dsWorkflowVariableFromParticipant.key) &&
-        Objects.equals(this.participantId, dsWorkflowVariableFromParticipant.participantId) &&
-        Objects.equals(this.source, dsWorkflowVariableFromParticipant.source);
+    return true;
   }
 
   /**
@@ -131,7 +33,7 @@ public class DSWorkflowVariableFromParticipant {
    */
   @Override
   public int hashCode() {
-    return Objects.hash(key, participantId, source);
+    return Objects.hash();
   }
 
 
@@ -143,9 +45,6 @@ public class DSWorkflowVariableFromParticipant {
     StringBuilder sb = new StringBuilder();
     sb.append("class DSWorkflowVariableFromParticipant {\n");
     
-    sb.append("    key: ").append(toIndentedString(key)).append("\n");
-    sb.append("    participantId: ").append(toIndentedString(participantId)).append("\n");
-    sb.append("    source: ").append(toIndentedString(source)).append("\n");
     sb.append("}");
     return sb.toString();
   }
