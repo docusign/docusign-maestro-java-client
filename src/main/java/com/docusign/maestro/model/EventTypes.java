@@ -12,6 +12,32 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum EventTypes {
   
+  ENVELOPE_SENT("envelope-sent"),
+  
+  ENVELOPE_DELIVERED("envelope-delivered"),
+  
+  ENVELOPE_COMPLETED("envelope-completed"),
+  
+  ENVELOPE_DECLINED("envelope-declined"),
+  
+  ENVELOPE_VOIDED("envelope-voided"),
+  
+  ENVELOPE_CREATED("envelope-created"),
+  
+  ENVELOPE_RESENT("envelope-resent"),
+  
+  ENVELOPE_CORRECTED("envelope-corrected"),
+  
+  ENVELOPE_PURGE("envelope-purge"),
+  
+  ENVELOPE_DELETED("envelope-deleted"),
+  
+  ENVELOPE_DISCARD("envelope-discard"),
+  
+  DELIVERY_FAILED("Delivery Failed"),
+  
+  AUTHENTICATION_FAILED("Authentication Failed"),
+  
   SENT("Sent"),
   
   DELIVERED("Delivered"),

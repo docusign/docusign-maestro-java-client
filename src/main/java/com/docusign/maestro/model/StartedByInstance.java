@@ -28,7 +28,9 @@ public class StartedByInstance {
     
     PREPARER("Preparer"),
     
-    PARTICIPANT("Participant");
+    PARTICIPANT("Participant"),
+    
+    ONBEHALFOF("OnBehalfOf");
 
     private String value;
 

@@ -342,10 +342,10 @@ public class WorkflowInstance {
   }
 
   /**
-   * Get users.
+   * Contains the list of Users and Steps mapping.
    * @return users
    **/
-  @Schema(required = true, description = "")
+  @Schema(required = true, description = "Contains the list of Users and Steps mapping")
   public java.util.Map<String, String> getUsers() {
     return users;
   }

@@ -12,11 +12,15 @@ import com.fasterxml.jackson.annotation.JsonValue;
  */
 public enum WorkflowInstanceState {
   
+  CREATED("Created"),
+  
   IN_PROGRESS("In Progress"),
   
   COMPLETED("Completed"),
   
-  FAILED("Failed");
+  FAILED("Failed"),
+  
+  CANCELED("Canceled");
 
   private String value;
 

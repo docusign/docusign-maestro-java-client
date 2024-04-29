@@ -22,7 +22,11 @@ public enum DeploymentStatus {
   
   DELETED("Deleted"),
   
-  NOT_DEPLOYED("Not Deployed");
+  NOT_DEPLOYED("Not Deployed"),
+  
+  UNPUBLISH_IN_PROGRESS("Unpublish in Progress"),
+  
+  UNPUBLISHED("Unpublished");
 
   private String value;
 
