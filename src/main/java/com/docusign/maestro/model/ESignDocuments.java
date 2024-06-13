@@ -3,6 +3,7 @@ package com.docusign.maestro.model;
 import java.util.Objects;
 import java.util.Arrays;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * ESignDocument Object. This object should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate].
@@ -10,7 +11,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "ESignDocument Object. This object should be any of the following object models: [#/definitions/ESignDocumentFromPreviousStep, #/definitions/ESignDocumentFromESignTemplate]")
 
-public class ESignDocuments {
+public class ESignDocuments implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

@@ -3,6 +3,7 @@ package com.docusign.maestro.model;
 import java.util.Objects;
 import java.util.Arrays;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * A DS Workflow variable record.
@@ -10,7 +11,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "A DS Workflow variable record")
 
-public class DSWorkflowVariableRecord extends java.util.HashMap<String, Object> {
+public class DSWorkflowVariableRecord extends java.util.HashMap<String, Object> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

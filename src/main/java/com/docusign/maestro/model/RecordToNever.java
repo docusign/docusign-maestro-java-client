@@ -2,13 +2,16 @@ package com.docusign.maestro.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.io.Serializable;
 
 /**
  * RecordToNever.
  *
  */
 
-public class RecordToNever {
+public class RecordToNever implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

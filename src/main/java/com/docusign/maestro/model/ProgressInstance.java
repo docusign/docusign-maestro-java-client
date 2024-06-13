@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
+import java.io.Serializable;
 
 /**
  * The progress information for a workflow instance.
@@ -14,7 +15,9 @@ import java.math.BigDecimal;
  */
 @Schema(description = "The progress information for a workflow instance")
 
-public class ProgressInstance {
+public class ProgressInstance implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("completedSteps")
   private BigDecimal completedSteps = null;
 

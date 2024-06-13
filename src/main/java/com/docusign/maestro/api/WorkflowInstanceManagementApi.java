@@ -89,7 +89,7 @@ public class WorkflowInstanceManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel"
+    String localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/cancel"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "instanceId" + "\\}", apiClient.escapeString(instanceId.toString()));
 
@@ -157,7 +157,7 @@ public class WorkflowInstanceManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history"
+    String localVarPath = "/v1/accounts/{accountId}/management/instances/{instanceId}/history"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "instanceId" + "\\}", apiClient.escapeString(instanceId.toString()));
 
@@ -232,7 +232,7 @@ public class WorkflowInstanceManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances/{instanceId}"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()))
       .replaceAll("\\{" + "instanceId" + "\\}", apiClient.escapeString(instanceId.toString()));
@@ -301,7 +301,7 @@ public class WorkflowInstanceManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 

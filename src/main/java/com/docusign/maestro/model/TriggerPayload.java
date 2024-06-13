@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * JSON payload that will be passed to the triggered workflow.
@@ -13,7 +14,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "JSON payload that will be passed to the triggered workflow")
 
-public class TriggerPayload {
+public class TriggerPayload implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("instanceName")
   private String instanceName = null;
 

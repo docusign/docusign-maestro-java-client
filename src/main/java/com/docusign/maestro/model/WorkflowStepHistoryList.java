@@ -4,6 +4,7 @@ import java.util.Objects;
 import java.util.Arrays;
 import com.docusign.maestro.model.WorkflowStepHistory;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * Returns Array of Workflow Step History..
@@ -11,7 +12,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "Returns Array of Workflow Step History.")
 
-public class WorkflowStepHistoryList extends java.util.ArrayList<WorkflowStepHistory> {
+public class WorkflowStepHistoryList extends java.util.ArrayList<WorkflowStepHistory> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

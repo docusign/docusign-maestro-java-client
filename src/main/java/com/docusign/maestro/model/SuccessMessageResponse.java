@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * Returns success with a status message.
@@ -13,7 +14,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "Returns success with a status message")
 
-public class SuccessMessageResponse {
+public class SuccessMessageResponse implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("message")
   private String message = null;
 

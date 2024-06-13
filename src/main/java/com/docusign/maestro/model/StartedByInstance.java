@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * The started by information for a workflow instance.
@@ -13,7 +14,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "The started by information for a workflow instance")
 
-public class StartedByInstance {
+public class StartedByInstance implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("startedById")
   private String startedById = null;
 

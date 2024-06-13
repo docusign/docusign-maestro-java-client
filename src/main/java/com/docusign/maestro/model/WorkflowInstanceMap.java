@@ -2,13 +2,16 @@ package com.docusign.maestro.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.io.Serializable;
 
 /**
  * WorkflowInstanceMap.
  *
  */
 
-public class WorkflowInstanceMap extends java.util.HashMap<String, String> {
+public class WorkflowInstanceMap extends java.util.HashMap<String, String> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

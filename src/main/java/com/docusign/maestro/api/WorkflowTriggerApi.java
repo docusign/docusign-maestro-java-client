@@ -103,24 +103,26 @@ public class WorkflowTriggerApi {
    * Creates a new workflow instance after authenticating with DS Account Server.
    * Creates a new workflow instance after authenticating with DS Account Server
    * @param accountId Account ID (required)
+   * @param workflowDefinitionId Workflow Definition ID (required)
    * @param body JSON payload that will be passed to the triggered workflow (required)
    * @return TriggerWorkflowViaPostResponse
    */ 
-  public TriggerWorkflowViaPostResponse triggerWorkflow(String accountId, TriggerPayload body) throws ApiException {
-    return triggerWorkflow(accountId, body, null);
+  public TriggerWorkflowViaPostResponse triggerWorkflow(String accountId, String workflowDefinitionId, TriggerPayload body) throws ApiException {
+    return triggerWorkflow(accountId, workflowDefinitionId, body, null);
   }
 
   /**
    * Creates a new workflow instance after authenticating with DS Account Server.
    * Creates a new workflow instance after authenticating with DS Account Server
    * @param accountId Account ID (required)
+   * @param workflowDefinitionId Workflow Definition ID (required)
    * @param body JSON payload that will be passed to the triggered workflow (required)
    * @param options for modifying the method behavior.
    * @return TriggerWorkflowViaPostResponse
    * @throws ApiException if fails to make API call
    */
-  public TriggerWorkflowViaPostResponse triggerWorkflow(String accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options) throws ApiException {
-    ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = triggerWorkflowWithHttpInfo(accountId, body, options);
+  public TriggerWorkflowViaPostResponse triggerWorkflow(String accountId, String workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options) throws ApiException {
+    ApiResponse<TriggerWorkflowViaPostResponse> localVarResponse = triggerWorkflowWithHttpInfo(accountId, workflowDefinitionId, body, options);
     return localVarResponse.getData();
   }
 
@@ -128,17 +130,23 @@ public class WorkflowTriggerApi {
    * Creates a new workflow instance after authenticating with DS Account Server
    * Creates a new workflow instance after authenticating with DS Account Server
    * @param accountId Account ID (required)
+   * @param workflowDefinitionId Workflow Definition ID (required)
    * @param body JSON payload that will be passed to the triggered workflow (required)
    * @param options for modifying the method behavior.
    * @return TriggerWorkflowViaPostResponse
    * @throws ApiException if fails to make API call
    */
-  public ApiResponse<TriggerWorkflowViaPostResponse > triggerWorkflowWithHttpInfo(String accountId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options) throws ApiException {
+  public ApiResponse<TriggerWorkflowViaPostResponse > triggerWorkflowWithHttpInfo(String accountId, String workflowDefinitionId, TriggerPayload body, WorkflowTriggerApi.TriggerWorkflowOptions options) throws ApiException {
     Object localVarPostBody = body;
     
     // verify the required parameter 'accountId' is set
     if (accountId == null) {
       throw new ApiException(400, "Missing the required parameter 'accountId' when calling triggerWorkflow");
+    }
+    
+    // verify the required parameter 'workflowDefinitionId' is set
+    if (workflowDefinitionId == null) {
+      throw new ApiException(400, "Missing the required parameter 'workflowDefinitionId' when calling triggerWorkflow");
     }
     
     // verify the required parameter 'body' is set
@@ -147,8 +155,9 @@ public class WorkflowTriggerApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-auth/v1.0/accounts/{accountId}/workflows/trigger"
-      .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()));
+    String localVarPath = "/v1/accounts/{accountId}/workflow_definitions/{workflowDefinitionId}/trigger"
+      .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
+      .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 
     // query params
     java.util.List<Pair> localVarQueryParams = new java.util.ArrayList<Pair>();

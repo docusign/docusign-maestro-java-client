@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * Details of a Workflow Instance triggered for a Workflow Definition.
@@ -16,7 +17,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "Details of a Workflow Instance triggered for a Workflow Definition")
 
-public class WorkflowInstance {
+public class WorkflowInstance implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("accountId")
   private String accountId = null;
 
