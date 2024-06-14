@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * A request body that used for create or update workflow definition.
@@ -14,7 +15,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "A request body that used for create or update workflow definition")
 
-public class CreateOrUpdateWorkflowDefinitionRequestBody {
+public class CreateOrUpdateWorkflowDefinitionRequestBody implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("workflowDefinition")
   private WorkflowDefinition workflowDefinition = null;
 

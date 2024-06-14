@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
+import java.io.Serializable;
 
 /**
  * Returns a list of workflow definitions&#39; metadata (0 or more)..
@@ -15,7 +16,9 @@ import java.math.BigDecimal;
  */
 @Schema(description = "Returns a list of workflow definitions' metadata (0 or more).")
 
-public class WorkflowDefinitionList {
+public class WorkflowDefinitionList implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("count")
   private BigDecimal count = null;
 

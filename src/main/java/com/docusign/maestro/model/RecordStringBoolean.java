@@ -2,13 +2,16 @@ package com.docusign.maestro.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.io.Serializable;
 
 /**
  * RecordStringBoolean.
  *
  */
 
-public class RecordStringBoolean extends java.util.HashMap<String, Boolean> {
+public class RecordStringBoolean extends java.util.HashMap<String, Boolean> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

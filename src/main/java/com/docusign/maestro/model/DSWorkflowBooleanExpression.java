@@ -8,13 +8,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * DSWorkflowBooleanExpression.
  *
  */
 
-public class DSWorkflowBooleanExpression {
+public class DSWorkflowBooleanExpression implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("expressions")
   private java.util.List<Object> expressions = new java.util.ArrayList<>();
 

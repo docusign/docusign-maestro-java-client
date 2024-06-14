@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * DS Workflow Variable from a Variable.
@@ -14,7 +15,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "DS Workflow Variable from a Variable")
 
-public class DSWorkflowVariableFromVariable {
+public class DSWorkflowVariableFromVariable implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("key")
   private String key = null;
 

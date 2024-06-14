@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.time.OffsetDateTime;
+import java.io.Serializable;
 
 /**
  * A DS workflow definition with metadata..
@@ -17,7 +18,9 @@ import java.time.OffsetDateTime;
  */
 @Schema(description = "A DS workflow definition with metadata.")
 
-public class WorkflowDefinitionWithId {
+public class WorkflowDefinitionWithId implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("accountId")
   private String accountId = null;
 

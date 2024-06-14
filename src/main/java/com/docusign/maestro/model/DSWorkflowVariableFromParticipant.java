@@ -3,6 +3,7 @@ package com.docusign.maestro.model;
 import java.util.Objects;
 import java.util.Arrays;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition..
@@ -10,7 +11,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "DS Workflow Variable from a Participant object. The definition is flexible based on the workflow definition.")
 
-public class DSWorkflowVariableFromParticipant {
+public class DSWorkflowVariableFromParticipant implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

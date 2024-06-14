@@ -4,6 +4,7 @@ import java.util.Objects;
 import java.util.Arrays;
 import com.docusign.maestro.model.WorkflowInstance;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * A list of workflow instances (0 or more)..
@@ -11,7 +12,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "A list of workflow instances (0 or more).")
 
-public class WorkflowInstancesList extends java.util.ArrayList<WorkflowInstance> {
+public class WorkflowInstancesList extends java.util.ArrayList<WorkflowInstance> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

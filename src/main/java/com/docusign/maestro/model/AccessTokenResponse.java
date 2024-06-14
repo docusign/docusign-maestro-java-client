@@ -8,6 +8,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
+import java.io.Serializable;
 
 /**
  * Access Token response details.
@@ -15,7 +16,9 @@ import java.math.BigDecimal;
  */
 @Schema(description = "Access Token response details")
 
-public class AccessTokenResponse {
+public class AccessTokenResponse implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("access_token")
   private String accessToken = null;
 

@@ -8,13 +8,16 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
+import java.io.Serializable;
 
 /**
  * GetConfigurationInstancesResponse.
  *
  */
 
-public class GetConfigurationInstancesResponse {
+public class GetConfigurationInstancesResponse implements Serializable {
+  private static final long serialVersionUID = 1L;
+
   @JsonProperty("configInstances")
   private java.util.List<GetConfigurationInstancesResponseConfigInstances> configInstances = null;
 

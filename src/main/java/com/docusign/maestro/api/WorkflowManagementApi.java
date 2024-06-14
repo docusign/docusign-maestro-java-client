@@ -89,7 +89,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()));
 
     // query params
@@ -156,7 +156,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 
@@ -265,7 +265,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 
@@ -335,7 +335,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/config_instances"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 
@@ -436,7 +436,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()));
 
     // query params
@@ -512,7 +512,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/publish"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 
@@ -587,7 +587,7 @@ public class WorkflowManagementApi {
     }
     
     // create path and map variables
-    String localVarPath = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}"
+    String localVarPath = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}"
       .replaceAll("\\{" + "accountId" + "\\}", apiClient.escapeString(accountId.toString()))
       .replaceAll("\\{" + "workflowDefinitionId" + "\\}", apiClient.escapeString(workflowDefinitionId.toString()));
 

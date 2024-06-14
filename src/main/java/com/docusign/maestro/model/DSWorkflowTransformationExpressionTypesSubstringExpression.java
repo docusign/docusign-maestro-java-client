@@ -2,6 +2,7 @@ package com.docusign.maestro.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;

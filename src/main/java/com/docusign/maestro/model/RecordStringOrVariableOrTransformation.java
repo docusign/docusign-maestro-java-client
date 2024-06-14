@@ -3,6 +3,7 @@ package com.docusign.maestro.model;
 import java.util.Objects;
 import java.util.Arrays;
 import io.swagger.v3.oas.annotations.media.Schema;
+import java.io.Serializable;
 
 /**
  * A Record of strings to Strings, Variables, or Transformation Expressions.
@@ -10,7 +11,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
  */
 @Schema(description = "A Record of strings to Strings, Variables, or Transformation Expressions")
 
-public class RecordStringOrVariableOrTransformation extends java.util.HashMap<String, Object> {
+public class RecordStringOrVariableOrTransformation extends java.util.HashMap<String, Object> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.

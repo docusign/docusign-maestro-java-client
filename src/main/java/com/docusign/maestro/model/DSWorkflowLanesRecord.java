@@ -3,13 +3,16 @@ package com.docusign.maestro.model;
 import java.util.Objects;
 import java.util.Arrays;
 import com.docusign.maestro.model.DSWorkflowLane;
+import java.io.Serializable;
 
 /**
  * DSWorkflowLanesRecord.
  *
  */
 
-public class DSWorkflowLanesRecord extends java.util.HashMap<String, DSWorkflowLane> {
+public class DSWorkflowLanesRecord extends java.util.HashMap<String, DSWorkflowLane> implements Serializable {
+  private static final long serialVersionUID = 1L;
+
 
   /**
    * Compares objects.
