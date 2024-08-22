@@ -8,5 +8,5 @@ package com.docusign.maestro.client.auth;
   */
 
 public enum OAuthFlow {
-    accessCode, implicit, password, application
+    accessCode, implicit, password, application, jwt
 }
