@@ -1,3 +1,5 @@
+## [v3.0.0] - Maestro API v1.0.0-1.0.5 - 2025-05-22
+**DEPRECATED:**  This SDK is no longer maintained.
 ## [v2.0.0] - Maestro API v1.0.0-1.0.5 - 2024-07-30
 ### Breaking Changes
 - Deprecation of OLTU library: The OLTU library for handling OAuth is no longer used.
