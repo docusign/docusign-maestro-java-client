@@ -14,9 +14,9 @@ import com.docusign.maestro.client.ApiResponse;
 
 
 /**
- * WorkflowInstanceManagementApi class.
- *
- **/
+ * @deprecated Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/
+ */
+@Deprecated
 public class WorkflowInstanceManagementApi {
   private ApiClient apiClient;
 
